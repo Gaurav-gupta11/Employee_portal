@@ -1,0 +1,23 @@
+uuid: 22ada054-d98c-4d99-b332-c923bfab5b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contactus
+  module:
+    - text
+id: node.contactus.body
+field_name: body
+entity_type: node
+bundle: contactus
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,34 @@
+uuid: 3092896d-ca49-4660-b884-f9ad25e401cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.brands.field_brandimage
+    - taxonomy.vocabulary.brands
+  module:
+    - image
+    - text
+id: taxonomy_term.brands.default
+targetEntityType: taxonomy_term
+bundle: brands
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_brandimage:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

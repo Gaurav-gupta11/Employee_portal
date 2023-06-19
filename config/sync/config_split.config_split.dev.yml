@@ -1,0 +1,18 @@
+uuid: 5d083fcf-8f50-474e-86ee-ddc2ca0bed31
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: ''
+weight: 0
+folder: ../config/development/dev
+module:
+  webform: 0
+theme: {  }
+blacklist:
+  - system.site
+  - nameinnoraftemployeemanagementportal
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

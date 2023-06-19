@@ -1,0 +1,24 @@
+uuid: 86e5804f-ef5f-4746-80b8-080067971d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paras
+    - node.type.page
+  module:
+    - text
+id: node.page.field_paras
+field_name: field_paras
+entity_type: node
+bundle: page
+label: Paras
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<p>Lorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum paraLorem Ipsum para</p>'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

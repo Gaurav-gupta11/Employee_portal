@@ -1,0 +1,25 @@
+uuid: ed2c3ce1-05db-4ce9-83cb-84f32f44bc71
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.custome
+  module:
+    - system
+  theme:
+    - olivero
+id: custom
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'system_menu_block:custome'
+settings:
+  id: 'system_menu_block:custome'
+  label: Custom
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
