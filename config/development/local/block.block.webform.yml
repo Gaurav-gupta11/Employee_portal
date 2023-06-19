@@ -1,0 +1,34 @@
+uuid: 17a906e0-f863-40e5-b098-3294e6b9d162
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contactus2
+  module:
+    - node
+    - webform
+  theme:
+    - olivero
+id: webform
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: visible
+  provider: webform
+  webform_id: contactus2
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      contactus: contactus

@@ -1,0 +1,19 @@
+uuid: f31ee174-c3ae-4911-8932-fac31f6cef82
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+folder: ../config/development/local
+module:
+  devel: 0
+  views_ui: 0
+  webform: 0
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,32 @@
+uuid: 28c9bae8-0e94-4d8a-9062-400a22a76236
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contactus.body
+    - field.field.node.contactus.field_image5
+    - node.type.contactus
+  module:
+    - text
+    - user
+id: node.contactus.teaser
+targetEntityType: node
+bundle: contactus
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image5: true

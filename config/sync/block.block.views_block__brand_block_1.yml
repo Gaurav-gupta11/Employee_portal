@@ -1,0 +1,32 @@
+uuid: 925531b8-5db4-4ab4-83bd-e94e8f87236c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.brand
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__brand_block_1
+theme: olivero
+region: content_below
+weight: -9
+provider: null
+plugin: 'views_block:brand-block_1'
+settings:
+  id: 'views_block:brand-block_1'
+  label: 'Our partners'
+  label_display: visible
+  provider: views
+  views_label: 'Our partners'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
